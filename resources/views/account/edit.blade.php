@@ -8,7 +8,7 @@
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <form action="{{ route('account.update') }}" method="POST">
+    <form method="POST">
         @csrf
         @method('PUT')
 
@@ -29,7 +29,7 @@
         </div>
 
         <button type="submit" class="btn btn-success">Update Information</button>
-        <a href="{{ route('account.show') }}" class="btn btn-secondary">Cancel</a>
+        <a href="{{ url()->previous() }}" class="btn btn-primary">Quay lại</a>
     </form>
 </div>
 @endsection

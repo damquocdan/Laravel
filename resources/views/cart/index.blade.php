@@ -19,7 +19,8 @@
             @foreach($carts as $cart)
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="{{ $cart->product->image_url }}" class="card-img-top" alt="{{ $cart->product->name }}"> <!-- Display Product Image -->
+                    <img src="{{ asset('storage/' . $cart->product->image) }}" class="card-img-top" alt="{{ $cart->product->name }}">
+                     <!-- Display Product Image -->
                         <div class="card-body">
                             <h5 class="card-title">{{ $cart->product->name }}</h5>
                             <p class="card-text">Giá: ${{ $cart->product->price }}</p>

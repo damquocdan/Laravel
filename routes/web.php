@@ -87,5 +87,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/checkout', [OrderController::class, 'placeOrder'])->name('checkout.placeOrder');
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
     Route::get('/account', [AccountController::class, 'index'])->name('account.index');
-
+    Route::get('/account/edit', [AccountController::class, 'edit'])->name('account.edit');
+    
+    
 });

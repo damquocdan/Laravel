@@ -2,14 +2,14 @@
 
 @section('content')
 <div class="container">
-    <h1>Account Information</h1>
+    <h1>Thông tin tài khoản</h1>
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
     <p><strong>Name:</strong> {{ $user->name }}</p>
     <p><strong>Email:</strong> {{ $user->email }}</p>
-    <p><strong>Role:</strong> {{ $user->role }}</p>
-    <a  class="btn btn-warning">Edit Account Information</a>
-    <a class="btn btn-primary">Go to Cart</a>
+    <a href="{{ route('account.edit') }}" class="btn btn-warning">Sửa thông tin</a>
+    <a href="{{ url()->previous() }}" class="btn btn-primary">Quay lại</a>
+
 </div>
 @endsection
