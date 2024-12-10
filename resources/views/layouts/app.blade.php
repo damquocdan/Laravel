@@ -76,7 +76,7 @@
     @endif
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="{{ route('home') }}">Cửa Hàng</a>
+        <a class="navbar-brand" href="{{ route('home') }}">Cửa Hàng bán Máy Tính</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -91,17 +91,12 @@
                 </li>
                 @else
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('cart.index') }}">Giỏ Hàng <i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link" href="{{ route('cart.index') }}">Đăng nhập <i class="fas fa-shopping-cart"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('account.index') }}">Tài Khoản</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('orders.index') }}">Đơn Hàng</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        Đăng xuất
+                        Đăng ký
                     </a>
                 </li>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

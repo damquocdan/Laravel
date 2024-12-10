@@ -128,10 +128,10 @@
                     <div class="modal-body">
                         <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="img-fluid mb-3">
                         <p>{{ $product->description }}</p>
-                        <p>Price: ${{ number_format($product->price, 2) }}</p>
+                        <p>Giá: ${{ number_format($product->price, 2) }}</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
                         <form action="{{ route('cart.add', $product->id) }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-primary">Thêm vào giỏ</button>

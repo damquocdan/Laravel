@@ -31,6 +31,8 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+
+
 // Route yêu cầu middleware admin
 Route::middleware(['admin'])->group(function () {
     // Admin Dashboard

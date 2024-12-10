@@ -13,10 +13,10 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Product Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Tổng tiền</th>
             </tr>
         </thead>
         <tbody>
